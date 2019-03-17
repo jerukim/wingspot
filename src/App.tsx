@@ -1,37 +1,19 @@
-import * as Router from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
 import * as React from 'react';
 import { Suspense, lazy } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import logo from './logo.svg';
+const Home = lazy(() => import('./screens/home'));
 
-// class App extends React.Component {
-//   public render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h1 className="App-title">Welcome to React</h1>
-//         </header>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//       </div>
-//     );
-//   }
-// }
-
-function App() {
+const App = () => {
   return (
     <Router>
-      <Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Switch>
-          <Route />
+          <Route exact path="/" component={Home} />
         </Switch>
       </Suspense>
     </Router>
   );
-}
+};
 
 export default App;
