@@ -1,10 +1,9 @@
-import * as Router from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
 import * as React from 'react';
-import { Suspense, lazy } from 'react';
+import { Suspense } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
 // class App extends React.Component {
 //   public render() {
@@ -22,16 +21,16 @@ import logo from './logo.svg';
 //   }
 // }
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route />
         </Switch>
       </Suspense>
     </Router>
   );
-}
+};
 
 export default App;
