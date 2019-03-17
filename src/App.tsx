@@ -25,9 +25,11 @@ import logo from './logo.svg';
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route />
-      </Switch>
+      <Suspense>
+        <Switch>
+          <Route />
+        </Switch>
+      </Suspense>
     </Router>
   );
 }
