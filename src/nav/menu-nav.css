@@ -1,7 +1,6 @@
 .menu-nav {
   order: 3;
   align-self: center;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   text-orientation: upright;
-  float: right;
 }
