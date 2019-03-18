@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Suspense, lazy } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { withRouter, Route, Switch } from 'react-router-dom';
 
 const Home = lazy(() => import('./screens/home'));
 const Menu = lazy(() => import('./screens/menu'));
 
-const Routes = () => {
+const Routes: React.FunctionComponent<{}> = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
@@ -16,4 +16,4 @@ const Routes = () => {
   );
 };
 
-export default Routes;
+export default withRouter(Routes);
