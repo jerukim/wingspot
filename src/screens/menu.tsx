@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const Menu = () => {
+const Menu: React.FunctionComponent<{}> = () => {
   return (
     <div>
       <h1>Menu</h1>
