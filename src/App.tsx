@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Routes from './routes';
 import { HomeNav, MenuNav } from './nav';
+import './App.css';
 
 const App: React.FunctionComponent<{}> = () => {
   return (
-    <div>
+    <div className="App">
       <HomeNav />
       <Routes />
       <MenuNav />
