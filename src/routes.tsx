@@ -7,12 +7,14 @@ const Menu = lazy(() => import('./screens/menu'));
 
 const Routes: React.FunctionComponent<{}> = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/menu" component={Menu} />
-      </Switch>
-    </Suspense>
+    <div className="app-container">
+      <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/menu" component={Menu} />
+        </Switch>
+      </Suspense>
+    </div>
   );
 };
 
