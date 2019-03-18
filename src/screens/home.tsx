@@ -7,7 +7,7 @@ const Home: React.FunctionComponent<{ location: Location }> = ({
   return (
     <div className="home">
       <h1>Home</h1>
-      <p>{pathname}</p>
+      <p>{pathname}8646071232 Mon-Fri 10am-10pm Directions</p>
     </div>
   );
 };

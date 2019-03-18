@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HomeNav: React.FunctionComponent<{}> = () => {
   return (
     <Link to="/" className="home-nav">
-      WINGSPOT
+      HOME
     </Link>
   );
 };
