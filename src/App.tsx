@@ -1,11 +1,11 @@
 import * as React from 'react';
-
 import Routes from './routes';
+import { HomeNav } from './nav';
 
 const App: React.FunctionComponent<{}> = () => {
   return (
     <div>
-      <h1>WINGSPOT</h1>
+      <HomeNav />
       <Routes />
       <h1>MENU</h1>
     </div>
