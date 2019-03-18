@@ -2,9 +2,9 @@
   height: 100vh;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
-.app-container {
+.app-content {
   order: 2;
-  align-self: flex-start;
 }
