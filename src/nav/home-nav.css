@@ -1,0 +1,9 @@
+.home-nav {
+  order: 1;
+  align-self: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  border-right: thin solid black;
+  padding: 10px;
+  text-decoration: none;
+}

@@ -2,8 +2,9 @@ import * as React from 'react';
 
 const Menu: React.FunctionComponent<{}> = () => {
   return (
-    <div>
+    <div className="menu">
       <h1>Menu</h1>
+      <p>wings hamburgers fish philly</p>
     </div>
   );
 };

@@ -1,0 +1,9 @@
+.menu-nav {
+  order: 3;
+  align-self: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  border-left: thin solid black;
+  padding: 10px;
+  text-decoration: none;
+}
